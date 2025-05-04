@@ -1,0 +1,80 @@
+.board {
+    width: 500px; /* Adjust the width */
+    height: 250px; /* Adjust the height */
+    margin: auto; /* Center the board horizontally */
+}
+
+.info {
+    width: 300px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.move-history {
+    max-height: 100px;
+    overflow-y: scroll;
+}
+body{
+    background:url(css/chess.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display:grid;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+}
+
+.board {
+    flex: 1;
+    margin-right: 20px; /* Adjust margin as needed */
+    
+}
+
+.info {
+    flex: 1;
+}
+/* Style for the info container */
+.info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the container */
+}
+
+/* Style for the select element */
+#search-depth {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Style for the move history container */
+.move-history {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+/* Additional styles for spans inside .info */
+.info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the move history */
+.move-history {
+    max-height: 200px; /* Limit the height and add scrollbar if necessary */
+    overflow-y: auto;
+}
+
+/* Style for the options inside select */
+#search-depth option {
+    padding: 5px;
+}
